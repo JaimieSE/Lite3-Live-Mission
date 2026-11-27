@@ -1,0 +1,80 @@
+{
+  "mode": "practice",
+  "group_id": "group08_TEST",
+  "cell_size_m": [
+    1.02,
+    1.02
+  ],
+  "scene_categories": [
+    "clothes_shop",
+    "fitness_centre",
+    "kitchen",
+    "market",
+    "workshop",
+    "clinic",
+    "cleaning_room",
+    "furniture_shop"
+  ],
+  "tasks": [
+    {
+      "id": "M01",
+      "kind": "object",
+      "target": "medical_supplies",
+      "labels": [
+        "medical_equipment"
+      ],
+      "priority": 70,
+      "task_type": "object",
+      "scene_required": true,
+      "detector_labels": [
+        "medical_equipment"
+      ]
+    },
+    {
+      "id": "M02",
+      "kind": "object",
+      "target": "electrical_hazard",
+      "labels": [
+        "high_voltage"
+      ],
+      "priority": 80,
+      "task_type": "hazard",
+      "scene_required": true,
+      "detector_labels": [
+        "high_voltage"
+      ]
+    },
+    {
+      "id": "M03",
+      "kind": "object",
+      "target": "survivor",
+      "labels": [
+        "person"
+      ],
+      "room": "kitchen",
+      "relation": "right",
+      "priority": 90,
+      "task_type": "survivor",
+      "scene_required": true
+    },
+    {
+      "id": "M04",
+      "kind": "qr",
+      "target": "qr_clue",
+      "priority": 85,
+      "task_type": "qr"
+    },
+    {
+      "id": "M05",
+      "kind": "object",
+      "target": "survivor",
+      "labels": [
+        "person"
+      ],
+      "priority": 75,
+      "task_type": "survivor",
+      "scene_required": true
+    }
+  ],
+  "contract": "sutd-v6.3"
+}

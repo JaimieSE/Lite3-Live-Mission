@@ -1,0 +1,25 @@
+{
+  "mode": "practice",
+  "group_id": "practice-only",
+  "cell_size_m": [1.0, 1.0],
+  "scene_categories": ["kitchen", "practice_medical_room", "practice_utility_room"],
+  "wire": {
+    "fields": {
+      "group": "group_id",
+      "task": "task_id",
+      "position": "pos",
+      "label": "label",
+      "scene": "scene",
+      "message": "message"
+    },
+    "position_format": "xy_array",
+    "acceptance": {"field": "accepted", "value": true}
+  },
+  "tasks": [
+    {"id": "M01", "kind": "object", "target": "medical_supplies", "labels": ["practice_medical"], "priority": 70},
+    {"id": "M02", "kind": "object", "target": "electrical_hazard", "labels": ["practice_warning"], "priority": 80},
+    {"id": "M03", "kind": "object", "target": "survivor", "labels": ["practice_survivor"], "room": "kitchen", "relation": "right", "priority": 90},
+    {"id": "M04", "kind": "qr", "target": "qr_clue", "priority": 85},
+    {"id": "M05", "kind": "object", "target": "survivor", "labels": ["practice_survivor"], "priority": 75}
+  ]
+}

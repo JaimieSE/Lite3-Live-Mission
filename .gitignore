@@ -1,0 +1,20 @@
+# Code and docs only: data, captures, models and backups stay on the robot/NUC
+__pycache__/
+.pytest_cache/
+.reid-deps/
+.rules-backup-*/
+.rules-stage.*/
+captures_store/
+data/
+perception_runs/
+models/
+*.pt
+calibration/**
+!calibration/
+!calibration/*.py
+*.pre-*
+*.before-*
+*.map-ray-*
+*.pid
+*.log
+*.sqlite3*
